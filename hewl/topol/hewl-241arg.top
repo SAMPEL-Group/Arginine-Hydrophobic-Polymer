@@ -1,0 +1,44 @@
+;
+;	File 'topol.top' was generated
+;	By user: zajac028 (77335)
+;	On host: cn3001
+;	At date: Fri Nov 17 15:03:19 2023
+;
+;	This is a standalone topology file
+;
+;	Created by:
+;	                    :-) GROMACS - gmx pdb2gmx, 2023.2 (-:
+;	
+;	Executable:   /home/sarupria/zajac028/software/installed/gmx-2023.2-fftw-3.3.4/bin/gmx
+;	Data prefix:  /home/sarupria/zajac028/software/installed/gmx-2023.2-fftw-3.3.4
+;	Working dir:  /panfs/jay/groups/21/sarupria/zajac028/virus-stabilization/hewl-bsa/vagenende-2013/topol
+;	Command line:
+;	  gmx pdb2gmx -f ../../conf/2yvb-hewl.pdb -o ./hewl.gro -ignh
+;	Force field was read from the standard GROMACS share directory.
+;
+
+; Include forcefield parameters
+#include "charmm27.ff/forcefield.itp"
+
+; Include water parameters
+#include "charmm27.ff/tip3p.itp
+
+; Include topology for ions
+#include "charmm27.ff/ions.itp"
+
+; Include protein parameters
+#include "hewl-c22.itp"
+
+; Include excipient parameters
+#include "arg-c22.itp"
+
+[ system ]
+; Name
+LYSOZYME C in water
+
+[ molecules ]
+; Compound        #mols
+Protein_chain_A     1
+Arginine 241
+SOL         4744
+CL               249
