@@ -1,0 +1,52 @@
+; Include forcefield parameters
+#include "./charmm36-jul2022.ff/forcefield.itp"
+
+; Include chain topologies
+#include "./chain-itp/ppv-5fold-sliced-w0.2-c36_Protein_chain_K.itp"
+#include "./chain-itp/ppv-5fold-sliced-w0.2-c36_Protein_chain_L.itp"
+#include "./chain-itp/ppv-5fold-sliced-w0.2-c36_Protein_chain_M.itp"
+#include "./chain-itp/ppv-5fold-sliced-w0.2-c36_Protein_chain_N.itp"
+#include "./chain-itp/ppv-5fold-sliced-w0.2-c36_Protein_chain_E.itp"
+#include "./chain-itp/ppv-5fold-sliced-w0.2-c36_Protein_chain_F.itp"
+#include "./chain-itp/ppv-5fold-sliced-w0.2-c36_Protein_chain_G.itp"
+#include "./chain-itp/ppv-5fold-sliced-w0.2-c36_Protein_chain_H.itp"
+#include "./chain-itp/ppv-5fold-sliced-w0.2-c36_Protein_chain_I.itp"
+#include "./chain-itp/ppv-5fold-sliced-w0.2-c36_Protein_chain_D.itp"
+#include "./chain-itp/ppv-5fold-sliced-w0.2-c36_Protein_chain_A.itp"
+#include "./chain-itp/ppv-5fold-sliced-w0.2-c36_Protein_chain_C.itp"
+#include "./chain-itp/ppv-5fold-sliced-w0.2-c36_Protein_chain_J.itp"
+#include "./chain-itp/ppv-5fold-sliced-w0.2-c36_Protein_chain_B.itp"
+#include "./chain-itp/ppv-5fold-sliced-w0.2-c36_Protein_chain_O.itp"
+#include "./arg-c36.itp"
+
+; Include water topology
+#include "./charmm36-jul2022.ff/tip3p_original.itp"
+
+; Include topology for ions
+#include "./charmm36-jul2022.ff/ions.itp"
+
+[ system ]
+; Name
+Porcine Parvovirus Surface in water
+
+[ molecules ]
+; Compound        #mols
+Protein_chain_K     1
+Protein_chain_L     1
+Protein_chain_M     1
+Protein_chain_N     1
+Protein_chain_E     1
+Protein_chain_F     1
+Protein_chain_G     1
+Protein_chain_H     1
+Protein_chain_I     1
+Protein_chain_D     1
+Protein_chain_A     1
+Protein_chain_C     1
+Protein_chain_J     1
+Protein_chain_B     1
+Protein_chain_O     1
+XARG 1132
+SOL         193792
+NA               679
+CL               1691

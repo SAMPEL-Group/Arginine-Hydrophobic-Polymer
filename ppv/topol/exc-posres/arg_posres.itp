@@ -1,0 +1,18 @@
+; Type = 2 --> Flat-bottom restraint potential
+; g = 5 --> Apply force in z-direction
+; r = 9 --> Radius equal to length of capsid in z-direction
+; k --> force constant
+[ position_restraints ]
+; atom  type  g  r  k
+     1     2  5  9.5  10000
+     5     2  5  9.5  10000
+     7     2  5  9.5  10000
+    10     2  5  9.5  10000
+    13     2  5  9.5  10000
+    16     2  5  9.5  10000
+    18     2  5  9.5  10000
+    19     2  5  9.5  10000
+    22     2  5  9.5  10000
+    25     2  5  9.5  10000
+    26     2  5  9.5  10000
+    27     2  5  9.5  10000

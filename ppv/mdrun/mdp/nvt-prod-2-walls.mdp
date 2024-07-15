@@ -1,0 +1,50 @@
+title			= VIRUS SURFACE PRODUCTION
+; Run parameters
+define              	= -DEXCPOSRES ; Position restraining protein
+integrator              = md       ; leap-frog integrator
+nsteps                  = 50000000 ; 100 ns
+dt                      = 0.002    ; 2 fs
+
+; Output control
+nstxout-compressed      = 5000     ; save coordinates every 10.0 ps
+nstenergy               = 5000     ; save energies every 10.0 ps
+nstlog                  = 5000     ; update log file every 10.0 ps
+
+; Bond parameters
+continuation            = yes        ; first dynamics run
+constraint_algorithm    = lincs     ; holonomic constraints 
+constraints             = h-bonds   ; bonds involving H are constrained
+lincs_iter              = 1         ; accuracy of LINCS
+lincs_order             = 4         ; also related to accuracy
+
+; Nonbonded settings 
+cutoff-scheme           = Verlet    ; Buffered neighbor searching
+vdwtype			= cutoff
+vdw-modifier		= force-switch
+rlist			= 1.2
+rcoulomb                = 1.2       ; short-range electrostatic cutoff (in nm) ; 1.2 for CHARMM
+rvdw                    = 1.2       ; short-range van der Waals cutoff (in nm) ; 1.2 for CHARMM
+rvdw-switch		= 1.0	    ;
+DispCorr                = no        ; account for cut-off vdW scheme
+
+; Electrostatics
+coulombtype             = PME       ; Particle Mesh Ewald for long-range electrostatics
+
+; Temperature coupling is on
+tcoupl                  = nose-hoover         ; modified Berendsen thermostat
+tc-grps                 = Protein Solvent ; two coupling groups - more accurate
+tau_t                   = 1 1             ; time constant, in ps
+ref_t                   = 300 300             ; reference temperature, one for each group, in K
+
+; Velocity generation
+gen_vel                 = no        ; assign velocities from Maxwell distribution
+
+; Wall set-up
+pbc             	= xy
+nwall                   = 2		; walls at z=0 and at z-box
+wall-atomtype           = CD CD		; wall atomtype
+wall-type               = 10-4		; stiff LJ potential
+wall-r-linpot           = -1		; -1 --> error if atoms beyond wall, >0 applies linear potential
+wall-density            = 5 5		; number density of atoms for each wall
+wall-ewald-zfac         = 3		; scaling factor, descrease unphysical Coulomb interactions
+ewald-geometry          = 3dc		; reciprocal sum performed in 3D, but force and potential correction applied in z dimension
