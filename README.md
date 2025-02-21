@@ -11,9 +11,9 @@ J. W. P. Zajac, P. Muralikrishnan, I. Tohidian, X. Zeng, C. L. Heldt, S. L. Perr
 ### **Simulations** (`simulations/`)
 This directory contains all files required to set up and run molecular dynamics (MD) simulations. It is organized into the following subdirectories:
 
-- **`hydrophobic-polymer`/** - All scripts and input required to reproduce our hydrophobic polymer simulations.
-- **`hewl`/** - Additional input and parameters required to reproduce lysozyme simulations.
-- **`ppv`/** - Additional input and parameters required to reproduce porcine parvovirus simulations.
+- **`hydrophobic-polymer/`** - All scripts and input required to reproduce our hydrophobic polymer simulations.
+- **`hewl/`** - Additional input and parameters required to reproduce lysozyme simulations.
+- **`ppv/`** - Additional input and parameters required to reproduce porcine parvovirus simulations.
 - **`mdp/`** – Stores MD parameter files (`.mdp`) defining simulation settings.
 - **`mdrun/`** – Scripts and configurations for executing MD runs.
 - **`topol/`** – Topology files (`.top`, `.itp`) describing molecular structures and interactions.
