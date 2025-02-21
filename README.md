@@ -27,13 +27,6 @@ This directory contains all files required to set up and run molecular dynamics 
 ### **Analysis** (`analysis/`)
 This directory contains scripts and tools for post-simulation analysis, including structure validation, energy calculations, and trajectory processing.
 
-- **`centrality/`** - Tools for computing network centrality measures.
-- **`fragmentation/`** - Scripts for analyzing local solvent network fragmentation.
-- **`gyrate/`** - Computes hydrophobic polymer radius of gyration.
-- **`preferentialInteraction/`** - Evaluation of preferential interaction coefficients between polymer-excipient.
-- **`trjconv/`** - Utilities for trajectory conversions and modifications.
-- **`waterReorientation/`** - Analysis of hydration shell water reorientation dynamics.
-
 ## Getting Started
 To use this repository:
 1. Clone the repository:
