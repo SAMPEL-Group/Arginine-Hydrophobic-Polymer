@@ -1,16 +1,19 @@
 # Project Title
-Thank you for your interest in our project! This repository contains all necessary files and scripts to perform molecular simulations and subsequent analyses for our hydrophobic polymer / excipient systems. Below, you'll find an overview of the repository structure and how to get started.
+Thank you for your interest in our project! This repository contains all necessary files and scripts to perform molecular simulations and subsequent analyses for our hydrophobic polymer / arginine, lysozyme / arginine, and porcine parvovirus / arginine systems. Below, you'll find an overview of the repository structure and how to get started.
 
 ## Citation
 If you use this repository in your research, please cite the following preprint:
 
-J. W. P. Zajac, P. Muralikrishnan, C. L. Heldt, S. L. Perry, and S. Sarupria (2024) Impact of Co-Excipient Selection on Hydrophobic Polymer Folding: Insights for Optimal Formulation Design. arXiv:2407.00885 [cond-mat.soft]
+J. W. P. Zajac, P. Muralikrishnan, I. Tohidian, X. Zeng, C. L. Heldt, S. L. Perry, and S. Sarupria (2024) Flipping Out: Role of Arginine in Hydrophobic Interactions and Biological Formulation Design. arXiv:2403.11305 [cond-mat.soft]
 
 ## Repository Structure
 
 ### **Simulations** (`simulations/`)
 This directory contains all files required to set up and run molecular dynamics (MD) simulations. It is organized into the following subdirectories:
 
+- **`hydrophobic-polymer`/** - All scripts and input required to reproduce our hydrophobic polymer simulations.
+- **`hewl`/** - Additional input and parameters required to reproduce lysozyme simulations.
+- **`ppv`/** - Additional input and parameters required to reproduce porcine parvovirus simulations.
 - **`mdp/`** – Stores MD parameter files (`.mdp`) defining simulation settings.
 - **`mdrun/`** – Scripts and configurations for executing MD runs.
 - **`topol/`** – Topology files (`.top`, `.itp`) describing molecular structures and interactions.
@@ -35,8 +38,8 @@ This directory contains scripts and tools for post-simulation analysis, includin
 To use this repository:
 1. Clone the repository:
    ```bash
-   git clone git@github.com:SAMPEL-Group/Hydrophobic-Polymer-Binary-Excipients.git
-   cd Hydrophobic-Polymer-Binary-Excipients
+   git clone git@github.com:SAMPEL-Group/Arginine-Hydrophobic-Polymer.git
+   cd Arginine-Hydrophobic-Polymer
    ```
 2. Navigate to the relevant directory and follow the provided instructions.
 3. Ensure dependencies (e.g., GROMACS, Python libraries) are installed as needed.
