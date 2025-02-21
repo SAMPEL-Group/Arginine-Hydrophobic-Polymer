@@ -1,4 +1,4 @@
-# Project Title
+# Excipient Effects of Arginine on Hydrophobic Interactions and Biomolecular Models
 Thank you for your interest in our project! This repository contains all necessary files and scripts to perform molecular simulations and subsequent analyses for our hydrophobic polymer / arginine, lysozyme / arginine, and porcine parvovirus / arginine systems. Below, you'll find an overview of the repository structure and how to get started.
 
 ## Citation
