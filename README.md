@@ -2,9 +2,11 @@
 Thank you for your interest in our project! This repository contains all necessary files and scripts to perform molecular simulations and subsequent analyses for our hydrophobic polymer / arginine, lysozyme / arginine, and porcine parvovirus / arginine systems. Below, you'll find an overview of the repository structure and how to get started.
 
 ## Citation
-If you use this repository in your research, please cite the following preprint:
+If you use this repository in your research, please cite the following publications:
 
-J. W. P. Zajac, P. Muralikrishnan, I. Tohidian, X. Zeng, C. L. Heldt, S. L. Perry, and S. Sarupria (2024) Flipping Out: Role of Arginine in Hydrophobic Interactions and Biological Formulation Design. arXiv:2403.11305 [cond-mat.soft]
+> Jonathan W. P. Zajac, Praveen Muralikrishnan, Idris Tohidian, Xianci Zeng, Caryn L. Heldt, Sarah L. Perry, Sapna Sarupria. 16, 6780-6792, (2025) Chemical Science. DOI: 10.1039/d4sc08672d
+
+> Jonathan W. P. Zajac, Praveen Muralikrishnan, Caryn L. Heldt, Sarah L. Perry, Sapna Sarupria. Advance Article, (2025) Molecular Systems Design & Engineering. DOI: 10.1039/D4ME00201F
 
 ## Repository Structure
 
