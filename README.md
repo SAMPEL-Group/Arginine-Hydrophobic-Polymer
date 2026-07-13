@@ -40,11 +40,11 @@ To use this repository:
 3. Download the CHARMM22 force field from the Alex MacKerell website.
 4. Download the TIP4P/2005 water model from the Carlos Vega website.
 5. Merge force field files provided in `simulations/hydrophobic-polymer/topol` with the CHARMM force field directory.
-	5a. Move `hydr-poly.rtp` to `charmm.ff/` directory.
-	5b. Paste the contents of `hydr-poly-ffnonbonded.itp` to `charmm.ff/ffnonbonded.itp`.
-	5c. Paste the contents of `hydr-poly-ffbonded.itp` to `charmm.ff/ffbonded.itp`.
-	5d. Paste the contents of `hydr-poly-atomtypes.itp` to `charmm.ff/atomtypes.atb`.
-	5e. Place `tip4p05.itp` in the `charmm.ff/` directory.
+        - Move `hydr-poly.rtp` to `charmm.ff/` directory.
+        - Paste the contents of `hydr-poly-ffnonbonded.itp` to `charmm.ff/ffnonbonded.itp`.
+        - Paste the contents of `hydr-poly-ffbonded.itp` to `charmm.ff/ffbonded.itp`.
+        - Paste the contents of `hydr-poly-atomtypes.itp` to `charmm.ff/atomtypes.atb`.
+        - Place `tip4p05.itp` in the `charmm.ff/` directory.
 
 ## Contributions
 Contributions are welcome! Please submit a pull request or open an issue if you have suggestions or improvements.
