@@ -1,0 +1,11 @@
+[ bondtypes ]
+; i    j  func       b0          kb
+;Added by Praveen and Jonathan 03/2022
+;United Atom hydrophobic polymer atom
+  UA    UA      1    0.15300   334720.0   ;  
+
+[ angletypes ]
+;  i    j    k  func       th0       cth
+;Added by Praveen and Jonathan 03/2022
+;United Atom model hydrophobic polymer
+  UA    UA    UA     1   111.000    462.000   ; hydr polymer

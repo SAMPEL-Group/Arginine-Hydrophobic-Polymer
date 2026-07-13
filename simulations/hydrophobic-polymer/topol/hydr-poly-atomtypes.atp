@@ -1,0 +1,7 @@
+;Added Praveen and Jonathan 03/2022
+ OW   15.99940  ; O TIP4P Water
+ HW    1.00800  ; H TIP4P Water
+ MW    0.00000  ; M TIP4P Water
+ 
+;Added by Praveen and Jonathan 03/2022
+ UA  14.02660  ; hydr poly
